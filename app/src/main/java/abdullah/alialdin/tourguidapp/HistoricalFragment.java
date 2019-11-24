@@ -33,6 +33,12 @@ public class HistoricalFragment extends Fragment {
         places.add(new Place("Tomb of Queen Nefertari", 5, R.drawable.ic_launcher_foreground));
         places.add(new Place("Temple of Medinat Habu", 5, R.drawable.ic_launcher_foreground));
         places.add(new Place("Tomb of Ramses VI", 5, R.drawable.ic_launcher_foreground));
+        places.add(new Place("Tomb of Sennedjem", 5, R.drawable.ic_launcher_foreground));
+        places.add(new Place("Tomb of Ramses III", 5, R.drawable.ic_launcher_foreground));
+        places.add(new Place("Valley of the Kings", 5, R.drawable.ic_launcher_foreground));
+        places.add(new Place("Tomb of King Tutankhamun", 5, R.drawable.ic_launcher_foreground));
+        places.add(new Place("Temple of Hatshepsut", 5, R.drawable.ic_launcher_foreground));
+
         PlaceAdapter adapter = new PlaceAdapter(getContext(), places);
         ListView listView = rootView.findViewById(R.id.root_view);
         listView.setAdapter(adapter);

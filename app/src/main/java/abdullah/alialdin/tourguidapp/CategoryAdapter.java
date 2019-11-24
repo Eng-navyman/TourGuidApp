@@ -22,14 +22,18 @@ public class CategoryAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         if (position == 0){
             return new HotelsFragment();
-        }else {
+        }else if (position == 1){
             return new HistoricalFragment();
+        }else if (position == 2){
+            return new MuseumsFragment();
+        }else {
+            return new RestaurantsFragment();
         }
     }
 
     @Override
     public int getCount() {
-        return 2;
+        return 4;
     }
 
     @Nullable
@@ -37,8 +41,12 @@ public class CategoryAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         if (position == 0){
             return mContext.getString(R.string.hotels);
-        }else {
+        }else if (position == 1){
             return mContext.getString(R.string.historical);
+        }else if (position == 2){
+            return mContext.getString(R.string.museums);
+        }else {
+            return mContext.getString(R.string.restaurants);
         }
     }
 }
