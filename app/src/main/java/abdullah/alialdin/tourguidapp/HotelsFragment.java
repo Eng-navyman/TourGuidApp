@@ -37,7 +37,7 @@ public class HotelsFragment extends Fragment {
         places.add(new Place(getString(R.string.steigenberger), 4.5f,
                 R.drawable.steigenberger, "geo:25.690017,32.632433?q=steigenberger+hotel"));
         places.add(new Place(getString(R.string.pavillon), 4.6f,
-                R.drawable.pavillon, "geo:25.696137915872598,32.63835979071474?q=pavillon+hotel"));
+                R.drawable.pavillon, "geo:25.696137915872598,32.63835979071474?q=hotel+pavillon+winter"));
         places.add(new Place(getString(R.string.moudira), 4.2f,
                 R.drawable.moudira, "geo:25.684593,32.552692?q=moudira"));
         places.add(new Place(getString(R.string.pyramisa), 3.8f,
