@@ -23,11 +23,11 @@
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabs"
-            app:tabGravity="fill"
-            app:tabMode="fixed"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?attr/colorPrimary" />
+            android:background="?attr/colorPrimary"
+            app:tabGravity="fill"
+            app:tabMode="fixed" />
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.viewpager.widget.ViewPager

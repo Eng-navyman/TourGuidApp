@@ -15,7 +15,7 @@ import androidx.annotation.Nullable;
 import java.util.ArrayList;
 
 public class PlaceAdapter extends ArrayAdapter<Place> {
-    public PlaceAdapter(@NonNull Context context, ArrayList<Place> places) {
+    PlaceAdapter(@NonNull Context context, ArrayList<Place> places) {
         super(context, 0, places);
     }
 
@@ -23,7 +23,7 @@ public class PlaceAdapter extends ArrayAdapter<Place> {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         Place place = getItem(position);
-        if (convertView == null){
+        if (convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
         }
         TextView placeName = convertView.findViewById(R.id.place_name);

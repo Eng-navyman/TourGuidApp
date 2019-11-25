@@ -20,13 +20,13 @@ public class CategoryAdapter extends FragmentPagerAdapter {
     @NonNull
     @Override
     public Fragment getItem(int position) {
-        if (position == 0){
+        if (position == 0) {
             return new HotelsFragment();
-        }else if (position == 1){
+        } else if (position == 1) {
             return new HistoricalFragment();
-        }else if (position == 2){
+        } else if (position == 2) {
             return new MuseumsFragment();
-        }else {
+        } else {
             return new RestaurantsFragment();
         }
     }
@@ -39,13 +39,13 @@ public class CategoryAdapter extends FragmentPagerAdapter {
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
-        if (position == 0){
+        if (position == 0) {
             return mContext.getString(R.string.hotels);
-        }else if (position == 1){
+        } else if (position == 1) {
             return mContext.getString(R.string.historical);
-        }else if (position == 2){
+        } else if (position == 2) {
             return mContext.getString(R.string.museums);
-        }else {
+        } else {
             return mContext.getString(R.string.restaurants);
         }
     }
